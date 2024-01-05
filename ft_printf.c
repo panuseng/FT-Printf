@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: seng <marvin@42.fr>                        +#+  +:+       +#+        */
+/*   By: plaophit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 17:38:33 by seng              #+#    #+#             */
-/*   Updated: 2024/01/05 13:55:48 by seng             ###   ########.fr       */
+/*   Updated: 2024/01/05 16:59:19 by plaophit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ int	sprint(char *c)
 	return (count);
 }
 
+int dprint()
+
 int	checktype(va_list arg, char c)
 {
 	int	i;
@@ -40,8 +42,12 @@ int	checktype(va_list arg, char c)
 		i = cprint(va_arg(arg, int));
 	else if (c == 's')
 		i = sprint(va_arg(arg, char *));
+//	else if (c == 'p')
+//		i = pprint(va_arg(arg, ))
+	else if (c == 'd')
+		i = dprint(va_arg, int)
 	else if (c == '%')
-		i = '%';
+		i = cprint('%');
 
 	return (i);
 }
@@ -72,5 +78,5 @@ int	ft_printf(const char *c, ...)
 
 int	main(void)
 {
-	ft_printf("ch%s", "asdn");
+	ft_printf("%p",a);
 }
