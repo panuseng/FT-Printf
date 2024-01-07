@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: seng <marvin@42.fr>                        +#+  +:+       +#+         #
+#    By: plaophit <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/07 00:12:21 by plaophit          #+#    #+#              #
-#    Updated: 2024/01/07 04:40:38 by seng             ###   ########.fr        #
+#    Updated: 2024/01/07 19:41:19 by plaophit         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = libftprintf.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-SRC = ft_printf.c
+SRC = ft_printf.c print_2.c
 
 OBJ = ${SRC:.c=.o}
 
